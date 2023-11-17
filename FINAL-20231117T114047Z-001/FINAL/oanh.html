@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Sản Phẩm</title>
+    <style>
+        .Oanh {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .all {
+            display: grid;
+            grid-template-columns: repeat(4, 250px);
+            grid-gap: -80px;
+            margin: 0 13%; /* Khoảng cách 2 bên lề là (100 - 18 * 4 - 4 * 4)% */
+            justify-content: space-around;
+        }
+
+        .product-container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-image {
+            max-width: 100%;
+            max-height: 150px;
+            height: auto;
+            padding: 5px;
+        }
+
+        .product-rating-sold {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .star {
+            color: #FFD700;
+            margin-right: 5px;
+        }
+
+        .sold {
+            color: #555;
+        }
+
+        .product-info {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .product-info p {
+            margin: 0;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .buy-now-button,
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            width: 48%;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .product-price {
+            font-size: 15px;
+            color: green;
+            text-align: left;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        .discount {
+            font-size: 16px;
+            color: red;
+            text-decoration: line-through;
+            text-align: right;
+        }
+        .header {
+            text-align: center; color: rgb(46, 94, 75);
+        }
+    </style>
+    <h1 class="header">SẢN PHẨM BÁN CHẠY</h1>
+</head>
+<body>
+<div class="Oanh">
+    <div class="all">
+        <!-- Ô sản phẩm 1 -->
+        <div class="product-container">
+            <img class="product-image" src="Rectangle 222.png" alt="Sản phẩm 1">
+            <div class="product-rating-sold">
+                <div class="product-rating">
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                </div>
+                <div class="sold">Đã bán 150</div>
+            </div>
+            <div class="product-info">
+                <h3>Bánh Pía Lá Dứa Hải Sơn</h3>
+                <div class="product-price">
+                    <span class="discount">120.000</span> 
+                    <span style="margin-left:10px;"> 80.000 </span> 
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="add-to-cart-button" onclick="addToCart()">Thêm vào giỏ</button>
+                <button class="buy-now-button" onclick="buyNow()">Mua Ngay</button>
+            </div>
+        </div>
+
+        <!-- Ô sản phẩm 2 -->
+        <div class="product-container">
+            <img class="product-image" src="Rectangle 198.png" alt="Sản phẩm 2">
+            <div class="product-rating-sold">
+                <div class="product-rating">
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                </div>
+                <div class="sold">Đã bán 300</div>
+            </div>
+            <div class="product-info">
+                <h3>Bánh đậu xanh Hội An</h3>
+                <div class="product-price">
+                    <span class="discount">45.000</span> 
+                    <span style="margin-left:10px;"> 28.000 </span> 
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="add-to-cart-button" onclick="addToCart()">Thêm vào giỏ</button>
+                <button class="buy-now-button" onclick="buyNow()">Mua Ngay</button>
+            </div>
+        </div>
+
+        <!-- Ô sản phẩm 3 -->
+        <div class="product-container">
+            <img class="product-image" src="Rectangle 252.png" alt="Sản phẩm 3">
+            <div class="product-rating-sold">
+                <div class="product-rating">
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                </div>
+                <div class="sold">Đã bán 500</div>
+            </div>
+            <div class="product-info">
+                <h3>Trâu gác bếp Tây Bắc</h3>
+                <div class="product-price">
+                    <span class="discount">160.000</span> 
+                    <span style="margin-left:10px;"> 130.000 </span> 
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="add-to-cart-button" onclick="addToCart()">Thêm vào giỏ</button>
+                <button class="buy-now-button" onclick="buyNow()">Mua Ngay</button>
+            </div>
+        </div>
+
+        <!-- Ô sản phẩm 4 -->
+        <div class="product-container">
+            <img class="product-image" src="Rectangle 253.png" alt="Sản phẩm 4">
+            <div class="product-rating-sold">
+                <div class="product-rating">
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                    <div class="star">&#9733;</div>
+                </div>
+                <div class="sold">Đã bán 500</div>
+            </div>
+            <div class="product-info">
+                <h3>Kẹo dừa Bến Tre</h3>
+                <div class="product-price">
+                    <span class="discount">60.000</span> 
+                    <span style="margin-left:10px;"> 35.000 </span> 
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="add-to-cart-button" onclick="addToCart()">Thêm vào giỏ</button>
+                <button class="buy-now-button" onclick="buyNow()">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart() {
+            alert('Sản phẩm đã được thêm vào Giỏ Hàng');
+            // Thêm logic thêm vào giỏ hàng tại đây nếu cần
+        }
+
+        function buyNow() {
+            alert('Bạn đã chọn Mua Ngay');
+            // Thêm logic mua sản phẩm tại đây nếu cần
+        }
+    </script>
+    </div>
+</body>
+</html>

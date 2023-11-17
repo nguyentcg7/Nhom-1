@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Footer_EC</title>
+    <style>
+        .button_SDT{
+        margin-top: 0;
+        padding: 15px;
+        background-color: #629351;
+        color:#fff;
+        font-size: larger;
+        font-weight: Bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+       
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            justify-content: center;
+            grid-gap: 10px;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: repeat(4, 18%);
+            background-color: #EDD35B;
+            grid-gap: 8%;
+        }
+        /*Lưới cho footer ngang dài về 1 số chính sách*/
+        .grid-footer {
+            background-color: #EDD35B;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        /*Lưới chia 4 ô để điền chính sách vào*/
+        .grid-footer0 {
+            background-color: #EDD35B;
+            margin:auto;
+            text-align: center;
+            font-size:larger;
+            text-align: center;
+        }
+        .noidungfooter0 {
+            color: #000;
+            font-size: 25px; 
+            text-align: center;
+            padding-bottom: 10%;
+        }
+       
+        /*Lưới cho footer chính phía dưới ngang dài về 1 số chính sách*/
+
+        .grid-footer1 {
+            background-color: #629351;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            font-size: 16px;
+            text-align: center;
+        }
+         /* cái này là cho cái facebook ins youtube*/
+         .vitrilogo{
+
+            padding-bottom: 5%;
+            gap:10px;
+            
+        }
+        /*Lưới cho nội dung footer1*/
+        .grid-footer1_1 {
+            display: grid;
+            grid-template-columns:15% 85%;
+            grid-template-rows: auto auto;
+            grid-gap: 15px;
+            padding: 0px;
+        }
+        /*nội dung text footer1*/
+        .grid-item1_1 {
+            font-size: 20px;
+            float:left;
+            word-wrap: break-word;
+            margin-right: 20px;
+            color: #fff;
+            
+        }
+       /* Thiết lập ảnh tự động fix với ô */
+        .responsive-image {
+        width: 50%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+        }
+        /*nội dung cho mục phần trong footer*/
+        .noidungmuc2{
+            color: #fff; 
+            padding: 5%;
+            text-align: start;
+            font-size: xx-large;
+            font-weight: bold;
+           
+        }
+        /*nội dung cho chữ trong mục phần trong footer*/
+        .noidungfooter2_1 {
+            color:#fff;
+            text-align: start;
+            margin-left: 10%;
+            padding-bottom: 5%;
+            justify-content: space-around;
+            font-size: larger
+            ;
+        }
+        /*Cái này là cho nút nhập email */
+        .email-input {
+            width: 90%;
+            padding: 6px;
+            border: none;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            margin-left: 10%;
+           
+            ;
+        }
+        /* thiết lập chung hàng */
+        .email_button{
+            display: flex;
+        }
+        /*Thiết lập nút email*/
+        .submitEmail-button {
+        margin-top: 0;
+        width: 40%;
+        padding: 10px;
+        background-color: #EDD35B;
+        color:#629351;
+        border: none;
+        margin-right: 10%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        cursor: pointer;
+        }
+        
+        .submitEmail-button:hover {
+        margin-top: 0;
+        width: 40%;
+        padding: 10px;
+        background-color: blue;
+        color:#fff;
+        border: none;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="grid-footer" style="grid-column: span 3;">
+            <div class="grid-container1"> 
+                <div class="grid-footer0"> <!-- cái này là hàng 1 cột 1-->
+                    <img  src="fastdilivery.png" class="responsive-image"> <br>
+                    Xử lý và giao hàng nhanh chóng 
+                </div>
+                <div class="grid-footer0"> <!-- cái này là hàng 1 cột 2-->
+                    <img  src="policies_icon_2.webp"  class="responsive-image"> <br>
+                     Thanh toán khi nhận hàng  
+                </div>
+                <div class="grid-footer0"><!-- [Liên hệ hỗ trợ] cái này là hàng 1 cột 3-->
+                        <div class="noidungfooter0"> 
+                            Liên hệ hỗ trợ
+                        </div>
+                    <button class="button_SDT"> 
+                        1800 2003  </button>
+                    
+                </div>
+                <div class="grid-footer0"><!-- [Khiếu nại và góp ý] cái này là hàng 1 cột 4-->
+                    <div class="noidungfooter0"> 
+                        Khiếu nại và góp ý
+                    </div>
+                    <button class="button_SDT"> 
+                        1800 2023  </button>
+                </div>
+            </div>
+    
+
+            
+        </div>
+        <!-- ô đầu tiên hàng 2 của footer -->
+        <div class="grid-footer1">
+            <img  src="Logo cuối trang.png" class="responsive-image">
+           <div class="vitrilogo"> 
+                <img  src="Logo fb.png" width="10%" >  
+            
+                <img  src="Logo Inta.png"  width="10%">
+           
+                <img  src="Logo youtube.png"  width="10%">     
+            </div>
+        
+            <div class="grid-footer1_1">
+                <div class="grid-item1_1">
+                    <img src="Hình email.png" class="responsive-image" style="width: 100%; text-align: center;">
+                </div>
+                <div class="grid-item1_1">bamienfood.vn@gmail.com </div>
+
+                <div class="grid-item1_1" >
+                    <img src="🦆 icon _location_.png" class="responsive-image" style="width: 100%; text-align: center;">
+                </div>
+                <div class="grid-item1_1"> 
+                    279 Nguyễn Tri Phương, p5, Quận 10, TP. Hồ Chí Minh
+                </div>
+            </div>
+
+        </div>
+        <div class="grid-footer1"> <!-- này của hàng 2 cột 2-->
+
+                <div> 
+                    <div class="noidungmuc2">
+                        Hỗ trợ khách hàng
+                    </div>
+                    <div class="noidungfooter2_1"> 
+                        Các câu hỏi thường gặp <br>
+                        Yêu cầu hỗ trợ<br>
+                        Hướng dẫn đặt hàng<br>
+                        Phương thức vận chuyển<br>
+                        Chính sách đổi trả<br>
+                    </div>
+                </div>
+                <div style="padding-top: 20px;"> 
+                    <div class="noidungmuc2">
+                        Đăng kí nhận thông báo khuyến mãi
+                    </div>
+                    <br>
+                    <br>
+                    <div class="email_button"> 
+                            <input type="email" id="email" name="email" class="email-input" placeholder="Nhập email của bạn" required>
+                            <button type="submit" class="submitEmail-button"> 
+                                <h1 style="font-size:20px;" > Gửi </h1> 
+                            </button>
+                    </div>
+                   
+                </div>
+        </div>
+        <div class="grid-footer1">  <!-- này của hàng 2 cột 3-->
+            <div> 
+                <div class="noidungmuc2">
+                    Về Ba Miền Food
+                </div>
+                    <div class="noidungfooter2_1"> 
+                        Giới thiệu về Ba Miền Food<br>
+                        Chính sách bảo mật<br>
+                        Liên hệ<br>
+                        Tuyển dụng <br>
+                        Điều khoản sử dụng<br>
+                    </div>
+            </div>
+            <div> 
+                <div class="noidungmuc2">
+                    Thanh Toán
+                </div>
+                    <div class="vitrilogo">
+                        <img  src="Logo visa.png">
+                        <img  src="Logoatm.png">     
+                    </div>
+            </div>
+            <div> 
+                <div class="noidungmuc2">
+                    Tải ngay Ba Miền Food
+                </div>      
+            </div>
+            <div> 
+                <div class="vitrilogo">
+                    <img  src="Appstore.png">
+                    <img  src="tải ngay.png">     
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    
+</body>
+</html>

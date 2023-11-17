@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS cho dòng chữ "CHUYỆN BA MIỀN" */
+        .main-heading {
+          text-align: center;
+          color: #405F35;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          font-size: 24px;
+          font-weight: bold;
+          padding: 20px 0;
+          background-color: #fff;
+        }
+        
+        /* CSS cho các khung chữ nhật */
+        .rectangle-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+        }
+        
+        .rectangle {
+          width: calc(25% - 20px);
+          border-radius: 30px;
+          overflow: hidden;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          margin-right: 20px;
+          border: 1px solid;
+        }
+        
+        .rectangle img {
+          width: 100%;
+          height: auto;
+          max-height: 300px;
+          object-fit: cover;
+        }
+        
+        /* CSS cho đoạn text "Chèn nội dung vào đây" */
+        .content-text {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+        /* CSS cho dòng text "Xem thêm" */
+        .read-more {
+          text-align: right;
+          margin-top: 10px;
+          text-decoration: underline;
+        }
+        
+        .read-more a {
+          color: #405F35;
+          text-decoration: none;
+        }
+
+            /* CSS cho container chứa hai đoạn text nằm trên cùng một hàng */
+    .inline-text-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+    }
+    
+    .inline-text-container .text1 {
+      flex-grow: 1;
+      text-align: left;
+      font-weight: bold;
+      color: #405F35;
+    }
+    
+    .inline-text-container .text2 {
+      flex-grow: 1;
+      text-align: right;
+      color: #405F35;
+      text-decoration: underline;
+    }
+      </style>
+</head>
+<body>
+    <h1 class="main-heading">CHUYỆN BA MIỀN</h1>
+  
+  <div class="rectangle-container">
+    <div class="rectangle">
+      <img src="./Hình ảnh/Rectangle 232.png" alt="Bức hình 1">
+      <p style="font-weight: bold;">Doanh nhân Đặng Lê Nguyên Vũ và hành trình ấn tượng mang cà phê Việt ra thế giới</p>
+      <div class="inline-text-container">
+        <div class="text1">bamienfood</div>
+        <div class="text2">ngày/tháng/năm</div>
+      </div>
+    </div>
+  
+    <div class="rectangle">
+      <img src="./Hình ảnh/Rectangle 226.png" alt="Bức hình 2">
+      <p style="font-weight: bold;">Chiến thần Review Võ Hà Linh Khen tấm tắc Đặc sản Tây Bắc - Thịt trâu gác bếp</p>
+      <div class="inline-text-container">
+        <div class="text1">bamienfood</div>
+        <div class="text2">ngày/tháng/năm</div>
+      </div>
+    </div>
+  
+    <div class="rectangle">
+      <img src="./Hình ảnh/Rectangle 228.png" alt="Bức hình 3">
+      <p style="font-weight: bold;">Tăng cường quảng bá thương hiệu sản phẩm địa phương</p>
+      <div class="inline-text-container">
+        <div class="text1">bamienfood</div>
+        <div class="text2">ngày/tháng/năm</div>
+      </div></div>
+  
+    <div class="rectangle">
+      <img src="./Hình ảnh/Rectangle 223.png" alt="Bức hình 4">
+      <p style="font-weight: bold;">Phan Mạnh Quỳnh tiết lộ về xưởng kẹo lạc nuôi mình khôn lớn...</p>
+      <div class="inline-text-container">
+        <div class="text1">bamienfood</div>
+        <div class="text2">ngày/tháng/năm</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="read-more">
+    <a href="#">Xem thêm</a>
+  </div>
+</body>
+</html>

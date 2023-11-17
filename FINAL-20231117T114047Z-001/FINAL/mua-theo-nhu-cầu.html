@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua theo như cầu</title>
+    <style>
+        /* CSS để căn chỉnh heading vào giữa và thay đổi màu chữ */
+        .center-heading {
+          text-align: center;
+          color: #405F35;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* CSS cho container chứa 4 ảnh */
+        .image-container {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+        
+        /* CSS cho từng ảnh và chú thích */
+        figure {
+          position: relative;
+          display: inline-block;
+          margin: 10px;
+          width: 200px;
+          height: 100px;
+        }
+        
+        figcaption {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-weight: bold;
+          font-size: 16px;
+          transform: translate(-50%, -50%);
+          color: #405F35;
+          padding: 5px;
+          text-align: center;
+        }
+        
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .overlay-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.4;
+        }   
+      </style>
+
+</head>
+<body>
+  <div class="TrucTruc">
+    <h1 class="center-heading"> <br>SẢN PHẨM ĐẶC SẮC</br></h1>
+    
+    <div class="image-container">
+    <figure>
+      <img src="https://i.pinimg.com/564x/ca/d4/4c/cad44ce4f8c22345821a973429406cce.jpg" alt="Ảnh 1">
+      <div class="overlay-image" style="background-image: url('https://i.pinimg.com/564x/13/b9/1e/13b91e031cbd8194e03453eb1822d7a2.jpg');"></div>
+      <figcaption>BÁNH CỐM</figcaption>
+    </figure>
+    
+    
+    <figure>
+      <img src="https://i.pinimg.com/564x/36/74/44/367444240c38db393e53f8e0bfb8d648.jpg" alt="Ảnh 2">
+      <div class="overlay-image" style="background-image: url('https://i.pinimg.com/564x/13/b9/1e/13b91e031cbd8194e03453eb1822d7a2.jpg');"></div>
+      <figcaption>SẦU RIÊNG</figcaption>    
+    </figure>
+    
+    <figure>
+      <img src="https://i.pinimg.com/564x/cd/00/f0/cd00f05d552d0a515750eac65476eac3.jpg" alt="Ảnh 3">
+      <div class="overlay-image" style="background-image: url('https://i.pinimg.com/564x/13/b9/1e/13b91e031cbd8194e03453eb1822d7a2.jpg');"></div>
+      <figcaption>HẠT</figcaption>
+    </figure>
+    
+    <figure>
+      <img src="https://i.pinimg.com/564x/c4/24/8a/c4248ac36e2c834f632fc7c46c500cde.jpg" alt="Ảnh 4">
+      <div class="overlay-image" style="background-image: url('https://i.pinimg.com/564x/13/b9/1e/13b91e031cbd8194e03453eb1822d7a2.jpg');"></div>
+      <figcaption>CÀ PHÊ</figcaption>
+    </figure>
+  
+    </div>
+  </div>
+</body>
+</html>
